@@ -1,0 +1,24 @@
+.contact{
+    display: flex;
+    margin-left: auto;
+}
+.contact__icon{
+    margin-right: 10px;
+    fill: currentColor;
+    &:hover,
+    &:focus{
+    fill: currentColor;
+}
+}
+
+.contact__item:not(:last-child){
+margin-right: 50px;
+}
+
+.contact__link {
+    display: flex;
+    align-items: center;
+
+    color: inherit;
+}
+

@@ -1,0 +1,39 @@
+.join{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+}
+.join__title{
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}
+
+
+
+
+// Distribution
+
+.distribution{
+    display: flex;
+    align-items: flex-end;
+    
+    padding-bottom: 94px;
+    
+}
+.distribution--left{
+    margin-left: 93px;
+}
+
+.distribution__title{
+    width: 360px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
