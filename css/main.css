@@ -28,6 +28,11 @@ h1, h2, h3, h4, h5, h6, p {
   text-decoration: none;
 }
 
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -36,11 +41,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--white-text-color);
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
 }
 
 .container {
