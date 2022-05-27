@@ -79,23 +79,6 @@ body {
   justify-content: space-between;
 }
 
-.logo--accent {
-  color: var(--accent-color);
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-}
-
-.logo__header {
-  margin-right: 93px;
-  color: var(--logo-color);
-}
-
 .site-nav__link,
 .contact__link {
   display: block;
@@ -156,6 +139,23 @@ body {
   color: inherit;
 }
 
+.logo--accent {
+  color: var(--accent-color);
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo__header {
+  margin-right: 93px;
+  color: var(--logo-color);
+}
+
 .hero {
   margin: 0 auto;
   padding-top: 200px;
@@ -183,6 +183,7 @@ body {
 
 .button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
   min-width: 200px;
   padding: 10px 32px;
@@ -395,10 +396,6 @@ body {
   background-color: var(--footer-bg-color);
 }
 
-.footer__container {
-  display: flex;
-}
-
 .footer__logo {
   margin-right: 0;
   padding-top: 60px;
@@ -427,20 +424,8 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join {
+.footer__container {
   display: flex;
-  flex-direction: column;
-  margin-left: 70px;
-  justify-content: flex-end;
-  padding-bottom: 100px;
-}
-
-.join__title {
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--white-text-color);
 }
 
 .distribution {
@@ -458,32 +443,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-
-.join__list {
-  display: flex;
-}
-
-.join__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.join__link:hover, .join__link:focus {
-  background-color: var(--accent-color);
-}
-
-.join__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.join__icon {
-  fill: var(--white-text-color);
 }
 
 .distribution__email {
@@ -534,6 +493,48 @@ body {
   margin-left: 10px;
 }
 
+.join {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  justify-content: flex-end;
+  padding-bottom: 100px;
+}
+
+.join__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.join__list {
+  display: flex;
+}
+
+.join__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.join__link:hover, .join__link:focus {
+  background-color: var(--accent-color);
+}
+
+.join__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join__icon {
+  fill: var(--white-text-color);
+}
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -548,19 +549,6 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 400ms, visibility 400ms;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 40px;
-  width: 528px;
-  min-height: 581px;
-  background-color: #FFFFFF;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
 }
 
 .modal-close-btn {
@@ -584,6 +572,19 @@ body {
 }
 .modal-close-btn:hover .close-icon {
   fill: var(--accent-color);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  width: 528px;
+  min-height: 581px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .modal-field {
@@ -679,6 +680,11 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.agreement {
+  margin-left: 5px;
+  color: var(--accent-color);
+}
+
 .modal-btn {
   display: block;
   margin: 0 auto;
@@ -699,10 +705,6 @@ body {
   background: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.agreement {
-  color: var(--accent-color);
 }
 
 .btn__list {
